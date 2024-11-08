@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import fetchCharacter from '../utils/fetchCharacter'
 import getUpdated from '../utils/getUpdated'
+import { BlockSkeleton } from './Skeletons'
 import '../assets/character.css'
 
 type CharacterProps = {
@@ -15,7 +16,7 @@ export default function Character({ characterId }: CharacterProps) {
   });
 
   if (status === 'pending') {
-    return <div className='character'><div>Loading...</div></div>
+    return <div className='character'><BlockSkeleton /></div>
   }
 
   if (status === 'error') {

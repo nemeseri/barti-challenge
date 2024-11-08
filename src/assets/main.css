@@ -136,6 +136,15 @@ main p.error {
   font-weight: 600;
 }
 
+.skeleton-card {
+  flex: 1;
+  margin-bottom: 16px;
+}
+
+.skeleton-block {
+  flex: 1;
+}
+
 @media only screen and (max-width: 1200px) {
   #site-header {
     padding-left: 10px;

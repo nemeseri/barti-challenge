@@ -3,7 +3,7 @@ import { useNavigate, getRouteApi, useRouterState, useSearch } from '@tanstack/r
 import { useDebounce } from 'use-debounce'
 
 // can come from env
-const MIN_SEARCH_LENGTH = 3;
+const MIN_SEARCH_LENGTH = 2;
 
 export default function SearchBar() {
   // const { query } = routeApi.useSearch()
