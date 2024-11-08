@@ -31,6 +31,9 @@
   line-height: 22px;
   height: 22px;
   margin: 16px 0;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .character-list-item h4 {
@@ -59,4 +62,9 @@
   font-size: 12px;
   line-height: 14px;
   font-weight: 900;
+  position: absolute;
+  left: 0;
+  bottom: 32px;
+  text-align: center;
+  width: 100%;
 }

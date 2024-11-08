@@ -14,7 +14,7 @@ export default function CharacterListItem({ character }: CharacterListItemProps)
   }
 
   return (<Link to={`/characters/${character._id}`} className='character-list-item'>
-    <h3>{character.name}</h3>
+    <h3 title={character.name}>{character.name}</h3>
     <img src={character.imageUrl} alt={character.name} />
     {character.films.length > 0 && (
       <>
