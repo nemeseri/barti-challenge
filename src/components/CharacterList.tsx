@@ -23,7 +23,16 @@ export default function CharacterList({ ids }: CharacterListProps) {
         if (result.status === 'pending') {
           return <span key={idx}>Loading...</span>
         }
-        if (result.data) {
+        
+        if (result.status === 'error') {
+          return;
+        }
+
+        if (!result || result.data._id === undefined) {
+          return;
+        }
+
+        if (result.data && result.data._id) {
           return <CharacterListItem key={result.data._id} character={result.data} />
         }
       })}

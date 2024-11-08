@@ -18,7 +18,15 @@ export default function Character({ characterId }: CharacterProps) {
     return <div className='character'><div>Loading...</div></div>
   }
 
-  return (data && <div className='character'>
+  if (status === 'error') {
+    return <div className='character'><p className='error'>Error. Please try again later.</p></div>
+  }
+
+  if (!data || data.name === undefined) {
+    return <div className='character'><p className='error'>Character not found.</p></div>
+  }
+
+  return (<div className='character'>
     <img src={data.imageUrl} alt={data.name} />
 
     <div>

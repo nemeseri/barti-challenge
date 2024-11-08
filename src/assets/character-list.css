@@ -4,6 +4,31 @@
   margin-bottom: -16px;
 }
 
+.main-content .character-list {
+  padding: 80px 72px;
+}
+
+.search-results {
+  padding-top: 40px;
+}
+
+.search-results .character-list {
+  padding-top: 0;
+}
+
+.search-results h2 {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.search-results .no-results {
+  padding: 80px;
+  font-weight: 600;
+}
+
 .featured-characters {
   background: #054553;
   padding: 40px 72px 80px;
