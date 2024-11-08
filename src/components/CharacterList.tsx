@@ -1,6 +1,7 @@
 import { useQueries } from '@tanstack/react-query'
 import fetchCharacter from '../utils/fetchCharacter'
 import CharacterListItem from './CharacterListItem'
+import '../assets/character-list.css'
 
 type CharacterListProps = {
   ids: number[];
@@ -17,7 +18,7 @@ export default function CharacterList({ ids }: CharacterListProps) {
    })
 
   return (
-    <>
+    <div className='character-list'>
       {results.map((result, idx) => {
         if (result.status === 'pending') {
           return <span key={idx}>Loading...</span>
@@ -26,5 +27,5 @@ export default function CharacterList({ ids }: CharacterListProps) {
           return <CharacterListItem key={result.data._id} character={result.data} />
         }
       })}
-    </>)
+    </div>)
 }

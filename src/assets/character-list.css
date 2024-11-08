@@ -1,0 +1,19 @@
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -16px;
+}
+
+.featured-characters {
+  background: #054553;
+  padding: 40px 72px 80px;
+}
+
+.featured-characters h2 {
+  color: #fff;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 400;
+}

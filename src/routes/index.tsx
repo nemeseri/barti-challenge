@@ -1,7 +1,7 @@
 import { createFileRoute, stripSearchParams } from '@tanstack/react-router'
 import SearchResults from '../components/SearchResults'
 import FeaturedCharacters from '../components/FeaturedCharacters'
-import CharacterList from '../components/CharacterList';
+import CharacterList from '../components/CharacterList'
 
 type CharacterSearch = {
   query: string;
@@ -29,10 +29,10 @@ function HomeComponent() {
 
   return (
     <>
-      {query && <SearchResults query={query} />}
-      {!query && (
-        <CharacterList ids={defaultCharacterIds} />
-      )}
+      <section className='main-content'>
+        {query && <SearchResults query={query} />}
+        {!query && <CharacterList ids={defaultCharacterIds} />}
+      </section>
       <FeaturedCharacters />
     </>
   )

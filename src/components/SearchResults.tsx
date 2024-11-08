@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import filterCharacter from '../utils/filterCharacter'
 import CharacterListItem from './CharacterListItem'
+import '../assets/character-list.css'
 
 type SearchResultsProps = {
   query: string;
@@ -13,12 +14,12 @@ export default function SearchResults({ query }: SearchResultsProps) {
     staleTime: 1000*60*60*24,
   });
 
-  return (<section className='search-results'>
+  return (<div className='search-results character-list'>
     <h2>Search Results - {query}</h2>
     {status === 'pending' && <div>Loading...</div>}
     {data && data.length < 1 && <p>No results</p>}
     {data && data.map(char => {
       return <CharacterListItem key={char._id} character={char} />
     })}
-  </section>)
+  </div>)
 }

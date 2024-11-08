@@ -21,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
             {children}
         </main>
         <footer id='site-footer'>
-          <Logo />
+          <Link to='/' search={{query: ''}}><Logo /></Link>
           <p>For educational use only. All characters and content are the property of Disney. This test is for private use and development testing only and should not be distributed for public consumption </p>
         </footer>
       </div>

@@ -1,0 +1,112 @@
+:root {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+
+  background: #fff;
+  color: #222;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#layout {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#site-header {
+  padding: 36px 0;
+  display: flex;
+}
+
+#site-header .logo,
+#site-header .logo svg {
+  display: block;
+}
+
+#site-header form {
+  flex-grow: 1;
+  padding: 0 40px;
+}
+
+#site-header input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  background: #f1f2f3;
+  border-radius: 24px;
+  padding: 15px 16px;
+  border: 0;
+}
+
+#site-header input::placeholder {
+  color: #a7b6c5;
+}
+
+#site-header .user-profile {
+  width: 48px;
+  height: 48px;
+  background: #054553 url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 20C5.33579 17.5226 8.50702 16 12 16C15.493 16 18.6642 17.5226 21 20M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z' stroke='%23C2CCDA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat 50% 50%;
+  display: block;
+  border-radius: 24px;
+  text-indent: -999px;
+  overflow: hidden;
+}
+
+#site-header .user-profile:hover {
+  opacity: 0.8;
+}
+
+main {
+  background: #f1f2f3;
+}
+
+.main-content {
+  padding: 80px 72px;
+}
+
+#site-footer {
+  text-align: center;
+  font-size: 11px;
+  line-height: 24px;
+  padding: 43px 80px;
+}
+
+#site-footer svg {
+  display: block;
+  margin: 0 auto;
+}
+
+#site-footer p {
+  margin: 10px 0 0;
+}
+
+.primary-button,
+.primary-button:visited,
+.primary-button:focus {
+  box-sizing: border-box;
+  height: 48px;
+  line-height: 24px;
+  padding: 12px 24px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  background: #054553;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(5, 69, 83, .24);
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background: rgba(5, 69, 83, .8)
+}

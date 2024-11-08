@@ -2,6 +2,7 @@ import { createFileRoute, Link } from '@tanstack/react-router'
 import { useCookies } from 'react-cookie'
 import defaultUser from '../data/defaultUser'
 import getAge from '../utils/getAge'
+import getUpdated from '../utils/getUpdated'
 
 export const Route = createFileRoute('/profile')({
   component: Profile,
@@ -11,15 +12,6 @@ export const Route = createFileRoute('/profile')({
     },
   ],
 })
-
-function getUpdated(timestamp: EpochTimeStamp) {
-  const d = new Date(timestamp)
-  return d.toLocaleDateString(undefined, {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric'
-  })
-}
 
 const USERCOOKIE = import.meta.env.VITE_USERCOOKIE
 
