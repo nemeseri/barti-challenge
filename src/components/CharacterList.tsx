@@ -22,7 +22,7 @@ export default function CharacterList({ ids }: CharacterListProps) {
     <div className='character-list'>
       {results.map((result, idx) => {
         if (result.status === 'pending') {
-          return <CardSkeleton />
+          return <CardSkeleton key={idx} />
         }
         
         if (result.status === 'error') {
