@@ -1,5 +1,5 @@
 import { useEffect, ReactNode } from 'react'
-import { Link, Outlet, createRootRoute, useMatches } from '@tanstack/react-router'
+import { Outlet, createRootRoute, useMatches, ScrollRestoration } from '@tanstack/react-router'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { CookiesProvider } from 'react-cookie';
 import Layout from '../components/Layout'
@@ -19,6 +19,7 @@ function RootComponent() {
       <Layout>
         <QueryClientProvider client={queryClient}>
           <CookiesProvider defaultSetOptions={{ path: '/' }}>
+            <ScrollRestoration />
             <Outlet />
           </CookiesProvider>
         </QueryClientProvider>
