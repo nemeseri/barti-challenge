@@ -91,22 +91,45 @@ main {
   margin: 10px 0 0;
 }
 
+.button,
+.button:visited,
+.button:focus {
+  box-sizing: border-box;
+  height: 48px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  padding: 12px 24px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .primary-button,
 .primary-button:visited,
 .primary-button:focus {
-  box-sizing: border-box;
-  height: 48px;
-  line-height: 24px;
-  padding: 12px 24px;
   color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  background: #054553;
-  border-radius: 8px;
+  border: 1px solid #054553;
   box-shadow: 0 4px 4px 0 rgba(5, 69, 83, .24);
-  cursor: pointer;
+  background: #054553;
 }
 
 .primary-button:hover {
   background: rgba(5, 69, 83, .8)
+}
+
+.secondary-button,
+.secondary-button:visited,
+.secondary-button:focus,
+.secondary-button:hover {
+  color: #054553;
+  background-color: #f1f2f3;
+  border: 1px solid #054553;
+}
+
+input[type="date"] {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
 }

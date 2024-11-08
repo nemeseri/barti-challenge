@@ -1,0 +1,64 @@
+form.profile-edit {
+  padding: 80px;
+}
+
+.profile-edit .form-row,
+.profile-edit .form-field-100 {
+  width: 63%;
+  margin-bottom: 16px;
+}
+
+.profile-edit .form-row {
+  display: flex;
+}
+
+.profile-edit .form-row .form-field {
+  width: 48%;
+  margin-left: 4%;
+}
+
+.profile-edit .form-row .form-field:first-child {
+  margin-left: 0;
+}
+
+.profile-edit input {
+  display: block;
+  width: 100%;
+}
+
+.profile-edit label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.profile-edit .required label:after {
+  content: "*";
+  margin-left: 1ch;
+  color: #ff0004;
+}
+
+form.profile-edit input {
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #c2ccda;
+}
+
+form.profile-edit [aria-invalid=true] {
+  border-color: #ff0004;
+  outline-color: #ff0004;
+  background-color: rgba(255, 0, 4, .1);
+}
+
+form.profile-edit .primary-button {
+  margin-right: 16px;
+}
+
+form.profile-edit .button-row {
+  margin: 32px 0 0;
+}
+

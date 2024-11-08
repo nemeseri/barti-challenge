@@ -3,6 +3,7 @@ import { useCookies } from 'react-cookie'
 import defaultUser from '../data/defaultUser'
 import getAge from '../utils/getAge'
 import getUpdated from '../utils/getUpdated'
+import '../assets/profile.css'
 
 export const Route = createFileRoute('/profile')({
   component: Profile,
@@ -26,7 +27,7 @@ function Profile() {
   }
 
   return (
-    <>
+    <section className='profile-inner'>
       <h1>{user.firstName} {user.lastName}</h1>
       <p>Last Updated <time>{getUpdated(user.updatedAt)}</time></p>
       <ul>
@@ -36,7 +37,7 @@ function Profile() {
         <li>Favorite Disney Movie: {user.favMovie}</li>
         <li>Favorite Disneyland: {user.favDisneyland}</li>
       </ul>
-      <Link to='/profile-edit' className='primary-button'>Edit Profile</Link>
-    </>
+      <Link to='/profile-edit' className='button primary-button'>Edit Profile</Link>
+    </section>
   )
 }

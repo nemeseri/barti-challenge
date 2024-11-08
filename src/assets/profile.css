@@ -1,0 +1,29 @@
+.profile-inner {
+  padding: 80px;
+}
+
+.profile h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.profile p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.profile ul {
+  margin: 32px 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 0;
+}
+
+.profile li {
+  margin: 16px 0 0;
+  list-style: none;
+}

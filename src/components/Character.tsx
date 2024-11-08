@@ -53,7 +53,7 @@ export default function Character({ characterId }: CharacterProps) {
         </>
       )}
 
-      <a href={data.sourceUrl} className='primary-button' target='_blank'>Explore More Character Details</a>
+      <a href={data.sourceUrl} className='button primary-button' target='_blank'>Explore More Character Details</a>
     </div>
   </div>)
 }
