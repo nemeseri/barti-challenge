@@ -27,3 +27,9 @@
   margin: 16px 0 0;
   list-style: none;
 }
+
+@media only screen and (max-width: 767px) {
+  .profile-inner {
+    padding: 40px;
+  }
+}

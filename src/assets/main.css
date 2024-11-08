@@ -91,7 +91,6 @@ main {
 .button:visited,
 .button:focus {
   box-sizing: border-box;
-  height: 48px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 600;
@@ -135,4 +134,19 @@ main p.error {
   line-height: 24px;
   color: #ff0004;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  #site-header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #site-header form {
+    padding: 0 10px;
+  }
+  
+  #site-header a {
+    flex-shrink: 0;
+  }
 }

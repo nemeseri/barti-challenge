@@ -3,7 +3,7 @@ import { useNavigate, getRouteApi, useRouterState, useSearch } from '@tanstack/r
 import { useDebounce } from 'use-debounce'
 
 // can come from env
-const MIN_SEARCH_LENGTH = 2;
+const MIN_SEARCH_LENGTH = 3;
 
 export default function SearchBar() {
   // const { query } = routeApi.useSearch()
@@ -12,7 +12,7 @@ export default function SearchBar() {
     strict: false,
   });
   const [inputVal, setInputVal] = useState(query)
-  const [inputDebounced] = useDebounce(inputVal, 1000) // for a cleaner component
+  const [inputDebounced] = useDebounce(inputVal, 500) // for a cleaner component
   const router = useRouterState()
   const navigate = useNavigate()
 
@@ -45,7 +45,7 @@ export default function SearchBar() {
     })
   }
 
-  return (<form onSubmit={handleSubmit}>
-    <input name='disneysearch' value={inputVal} onChange={(e) => setInputVal(e.target.value)} placeholder='Find a character...' />
+  return (<form onSubmit={handleSubmit} role='search'>
+    <input name='disneysearch' type="search" value={inputVal} onChange={(e) => setInputVal(e.target.value)} placeholder='Find a character...' />
   </form>)
 }

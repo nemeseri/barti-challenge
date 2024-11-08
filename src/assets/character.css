@@ -41,3 +41,20 @@
   font-weight: 600;
   padding-left: 3ch;
 }
+
+@media only screen and (max-width: 767px) {
+  .character {
+    display: block;
+  }
+
+  .character img {
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .character img,
+  .character div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

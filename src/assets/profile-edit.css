@@ -62,3 +62,25 @@ form.profile-edit .button-row {
   margin: 32px 0 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .profile-edit .form-row,
+  .profile-edit .form-row .form-field,
+  .profile-edit .form-field-100 {
+    width: auto;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  form.profile-edit {
+    padding: 40px;
+  }
+
+  form.profile-edit .primary-button {
+    margin-bottom: 16px;
+  }
+  
+}
+
