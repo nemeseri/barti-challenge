@@ -13,6 +13,7 @@ export default function Character({ characterId }: CharacterProps) {
     queryKey: ['character', characterId],
     queryFn: () => fetchCharacter(characterId),
     staleTime: 1000*60*60*24,
+    gcTime: 1000*60*60*24,
   });
 
   if (status === 'pending') {
